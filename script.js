@@ -44,3 +44,51 @@ const config = {
 };
 
 new Chart(ctx, config);
+
+
+
+
+const stopCtx = document.getElementById('stopChart').getContext('2d');
+
+const stopChart = new Chart(stopCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Parada 1', 'Parada 2', 'Parada 3', 'Parada 4'],
+    datasets: [{
+      label: 'Duração (minutos)',
+      data: [15, 5, 30, 10],
+      backgroundColor: ['#53ABFC', '#53ABFC', '#53ABFC', '#53ABFC']
+    }]
+  },
+  options: {
+    indexAxis: 'y', // Torna o gráfico horizontal
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return `${context.parsed.x} minutos`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: 'Duração em minutos'
+        },
+        beginAtZero: true
+      },
+      y: {
+        title: {
+          display: true,
+          text: 'Número de paradas'
+        }
+      }
+    }
+  }
+});
