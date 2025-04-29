@@ -1,13 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: white;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f6fa;
+  color: #2c3e50;
+  padding: 20px;
 }
 
-.info {
-    text-align: center;
+h3, h4 {
+  font-weight: 500;
+  color: #34495e;
+  margin-bottom: 10px;
 }
 
-.estatisticas{
-    background-color: rgb(136, 136, 136);
-    color: rgb(226, 226, 226);
+.info, .estatisticas {
+  margin-bottom: 20px;
 }
 
+.horarios {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: #ecf0f1;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #2980b9;
+  text-align: center;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.time-info .label {
+  font-size: 13px;
+  color: #7f8c8d;
+}
+
+.time-info .value {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.metric {
+  background: #ecf0f1;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 4px;
+}
+
+.metric .label {
+  font-size: 13px;
+  color: #7f8c8d;
+}
+
+canvas {
+  margin-top: 10px;
+  width: 100% !important;
+  height: 300px !important;
+  background: #f9f9f9;
+  border-radius: 10px;
+}

@@ -7,20 +7,53 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div class="info">
-        <h3>Informações sobre o percurso</h3>
+        
+    <div class="container">
+        <div class="header">Informções sobre a viagem</div>
+        
+        <div class="time-info">
+          <div>
+            <div class="label">Estimativa de chegada</div>
+            <div class="value">00:48</div>
+          </div>
+          <div>
+            <div class="label">Horario de saida</div>
+            <div class="value">20:33</div>
+          </div>
+          <div>
+            <div class="label">Chegada real</div>
+            <div class="value">00:26</div>
+          </div>
+        </div>
+        
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-value">3.8 km</div>
+            <div class="label">Distancia</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">113 km/h</div>
+            <div class="label">Vel. Media</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">125 km/h</div>
+            <div class="label">Vel. Max</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">0s</div>
+            <div class="label">Acima de 200 km/h</div>
+          </div>
+        </div>
+    
+        <h3>Velocidade do trajeto</h3>
+        <canvas id="speedChart"></canvas>
     </div>
 
-    <div>
-        Horario de saida <p>
-        </p>
-        Horario de chgada
-    </div>
 
-    <div class="estatisticas">
-        <H4>Velocidade</H4>
-    </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="script.js"></script>
 
 
     
